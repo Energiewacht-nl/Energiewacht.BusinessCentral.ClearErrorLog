@@ -2,7 +2,7 @@
   "id": "ba5e2586-13b6-441c-a38e-adde822f7c10",
   "name": "Clear Error Messages",
   "publisher": "Marije Jennifer Brummel",
-  "version": "1.0.0.0",
+  "version": "1.0.20241009.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -27,5 +27,6 @@
     "allowDebugging": true,
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
-  }
+  },
+  "runtime": "13.1"
 }
