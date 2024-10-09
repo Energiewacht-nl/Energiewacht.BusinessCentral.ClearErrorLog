@@ -12,7 +12,7 @@ report 68000 "PTE Clear Error Log"
             RequestFilterFields = "Created On";
             trigger OnPreDataItem()
             begin
-                if Count > 1000 then
+                if Count > 10000 then
                     Error('Please use a smaller dataset');
             end;
 
@@ -37,12 +37,17 @@ report 68000 "PTE Clear Error Log"
     local procedure DeleteRegisters()
     var
         Dlg: Dialog;
-        i: Integer;
+        i, n : Integer;
     begin
         Dlg.Open('Delete Error Register #1#################');
         if ErrorMessageRegisterBuffer.FindSet() then
             repeat
                 i += 1;
+                n += 1;
+                if n = 100 then begin
+                    Commit();
+                    n := 0;
+                end;
                 Dlg.Update(1, Format(i) + ' of ' + Format(ErrorMessageRegisterBuffer.Count));
                 ErrorMessageRegister.Get(ErrorMessageRegisterBuffer.ID);
                 ErrorMessageRegister.Delete(true);
