@@ -1,4 +1,4 @@
-pageextension 68000 "PTE Error Message Register" extends "Error Message Register"
+pageextension 68001 "PTE Report Inbox" extends "Report Inbox"
 {
 
     actions
@@ -9,7 +9,7 @@ pageextension 68000 "PTE Error Message Register" extends "Error Message Register
             {
                 Caption = 'Clear';
                 ApplicationArea = All;
-                RunObject = report "PTE Clear Error Messages";
+                RunObject = report "PTE Clear Report Inbox";
             }
         }
     }

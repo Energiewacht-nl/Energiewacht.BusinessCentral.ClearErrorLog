@@ -1,9 +1,9 @@
-report 68000 "PTE Clear Error Log"
+report 68000 "PTE Clear Error Messages"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     ProcessingOnly = true;
-    Caption = 'Clear Error Log';
+    Caption = 'Clear Error Messages';
 
     dataset
     {
