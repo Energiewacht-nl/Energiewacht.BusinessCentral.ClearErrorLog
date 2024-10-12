@@ -2,9 +2,19 @@
   "id": "ba5e2586-13b6-441c-a38e-adde822f7c10",
   "name": "Clear Error Messages",
   "publisher": "Marije Jennifer Brummel",
-  "version": "1.0.20241011.0",
+  "version": "1.0.20241011.1",
   "logo": "images/marije.png",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "18e290e2-85e4-4e98-b3f6-d5e712c53d80", "name": "Tinx Magento 2 Connector", "publisher": "Tinx-IT", "version": "1.0.0.0"
+    },
+    {
+      "id": "132c7e8c-6dc1-4eb7-b573-e983e8f59d3d", "name": "Tinx Customer Portal", "publisher": "Tinx-IT", "version": "1.0.0.0"
+    },
+    {
+      "id": "71eb73a4-5141-43a0-bb26-2c4db8c73d45", "name": "Tinx E-Commerce Connector", "publisher": "Tinx-IT", "version": "1.0.0.0"
+    }
+  ],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
   "idRanges": [

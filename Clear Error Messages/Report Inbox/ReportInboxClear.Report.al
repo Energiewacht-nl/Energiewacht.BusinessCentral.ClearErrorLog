@@ -12,7 +12,7 @@ report 68001 "PTE Clear Report Inbox"
             RequestFilterFields = "Created Date-Time";
             trigger OnPreDataItem()
             begin
-                if Count > 10000 then
+                if Count > 100000 then
                     Error('Please use a smaller dataset');
             end;
 
