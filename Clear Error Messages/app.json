@@ -1,8 +1,8 @@
 {
   "id": "ba5e2586-13b6-441c-a38e-adde822f7c10",
-  "name": "Clear Error Messages",
+  "name": "Clear Database",
   "publisher": "Marije Jennifer Brummel",
-  "version": "1.0.20241012.0",
+  "version": "1.0.20241014.1",
   "logo": "images/marije.png",
   "dependencies": [
     {

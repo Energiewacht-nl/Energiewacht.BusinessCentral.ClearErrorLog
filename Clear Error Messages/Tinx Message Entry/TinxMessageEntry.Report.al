@@ -12,7 +12,7 @@ report 68002 "PTE Clear Tinx Message Entry"
             RequestFilterFields = "Date Created";
             trigger OnPreDataItem()
             begin
-                if Count > 100000 then
+                if Count > 1000000 then
                     Error('Please use a smaller dataset');
             end;
 
